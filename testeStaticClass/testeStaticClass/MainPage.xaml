@@ -11,7 +11,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Height="200" LineHeight="80" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30">Testes STATIC in C++/CX</TextBlock>
+        <TextBlock Height="200" LineHeight="80" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30">Tests - STATIC in C++/CX</TextBlock>
         <Button Width="200" Height="80" Background="Gray" Margin="100 300 0 0" Click="Teste1_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Teste 1</Button>
         <Button Width="200" Height="80" Background="Gray" Margin="400 300 0 0" Click="Teste2_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 2</Button>
         <Button Width="200" Height="80" Background="Gray" Margin="700 300 0 0" Click="Teste3_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 3</Button>

@@ -1,0 +1,1 @@
+## This example shows the steps to put an image in SVG format into an element in XAML PROGRAMMATICALLY
