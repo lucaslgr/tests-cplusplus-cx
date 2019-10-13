@@ -60,13 +60,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="testePutImageSVG_TemporaryKey.pfx" />
-    <None Include="Assets\img\Resistor.svg">
+    <None Include="README.md" />
+    <None Include="Assets\img\resistor.svg">
       <Filter>Assets\img</Filter>
     </None>
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml" />
+    <Page Include="Assets\img\resistor.xaml">
+      <Filter>Assets\img</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="testePutImageSVG.rc" />

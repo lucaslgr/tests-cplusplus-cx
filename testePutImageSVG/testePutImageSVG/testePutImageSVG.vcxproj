@@ -182,6 +182,7 @@
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Assets\img\resistor.xaml" />
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -190,7 +191,9 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="Assets\img\Resistor.svg" />
+    <None Include="Assets\img\resistor.svg">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+    </None>
     <None Include="README.md" />
     <None Include="testePutImageSVG_TemporaryKey.pfx" />
   </ItemGroup>

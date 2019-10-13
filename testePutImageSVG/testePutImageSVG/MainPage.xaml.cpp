@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
+#include "Assets/img/Resistor.g.h"
 
 using namespace testePutImageSVG;
 
@@ -32,7 +33,7 @@ void testePutImageSVG::MainPage::AddElement_Click(Platform::Object ^ sender, Win
 	b1->Width = 200;
 	b1->Height = 100;
 	b1->Content = "The image come here";
-	b1->Margin = Thickness(230,100,0,0);
+	//b1->Margin = Thickness(230,100,0,0);
 
 	cnv_AreaTest->Children->Append(b1);
 	
@@ -53,4 +54,8 @@ void testePutImageSVG::MainPage::PutSVGImage_Click(Platform::Object ^ sender, Wi
 	pointer_Button->HorizontalAlignment = Windows::UI::Xaml::HorizontalAlignment::Stretch;
 	pointer_Button->VerticalAlignment = Windows::UI::Xaml::VerticalAlignment::Stretch;
 	pointer_Button->Content = img;
+
+	//Testing the quality of image
+	pointer_Button->Width = 600;
+	pointer_Button->Height = 475;
 }
