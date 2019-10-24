@@ -11,9 +11,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Height="200" LineHeight="80" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30">Tests - STATIC in C++/CX</TextBlock>
-        <Button Width="200" Height="80" Background="Gray" Margin="100 300 0 0" Click="Teste1_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Teste 1</Button>
-        <Button Width="200" Height="80" Background="Gray" Margin="400 300 0 0" Click="Teste2_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 2</Button>
-        <Button Width="200" Height="80" Background="Gray" Margin="700 300 0 0" Click="Teste3_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 3</Button>
+        <TextBlock Height="200" LineHeight="80" Margin="325,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30">Tests - STATIC in C++/CX</TextBlock>
+        <Button Width="150" Height="80" Background="Gray" Margin="70,223,0,0" Click="Teste1_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Teste 1</Button>
+        <Button Width="150" Height="80" Background="Gray" Margin="320,223,0,0" Click="Teste2_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 2</Button>
+        <Button Width="150" Height="80" Background="Gray" Margin="570,223,0,0" Click="Teste3_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 3</Button>
+        <Button Content="Fábrica de Ativação" HorizontalAlignment="Left"  Click="AtivationClass_Click" Margin="575,163,0,0" VerticalAlignment="Top" />
+        <Button Width="150" Height="80" Background="Gray" Margin="820,223,0,0" Click="Teste4_Click" HorizontalAlignment="Left" VerticalAlignment="Top">Testa 4</Button>
+        <Canvas Name="Area_Teste4" Width="300" Height="300" Background="Transparent"  Margin="737,319,3,281"/>
     </Grid>
 </Page>

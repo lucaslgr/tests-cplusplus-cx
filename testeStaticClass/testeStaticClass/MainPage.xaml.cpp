@@ -40,8 +40,12 @@ void testeStaticClass::MainPage::Teste2_Click(Platform::Object ^ sender, Windows
 	Parametro::numPara++;
 	MessageDialog ^msgTeste2 = ref new MessageDialog("Teste 2 - membro primitivo numPara: " + Parametro::numPara); //Teste 2
 	msgTeste2->ShowAsync();
+}
 
-	Contador::static_Construtor();//Ativando os métodos estáticos da classe 
+void testeStaticClass::MainPage::AtivationClass_Click(Platform::Object ^ sender, Windows::UI::Xaml::RoutedEventArgs ^ e)
+{
+	//Ativando a classe Contador com valor inicial 100 pela fábrica de ativicação de memebros estáticos
+	Contador::static_Construtor();//Ativando os membros estáticos da classe Contador
 }
 
 void testeStaticClass::MainPage::Teste3_Click(Platform::Object ^ sender, Windows::UI::Xaml::RoutedEventArgs ^ e)
@@ -50,3 +54,12 @@ void testeStaticClass::MainPage::Teste3_Click(Platform::Object ^ sender, Windows
 	MessageDialog ^msgTeste3 = ref new MessageDialog("Teste 3 - objeto Contador : " + Parametro::c1->count); //Teste 3
 	msgTeste3->ShowAsync();
 }
+
+void testeStaticClass::MainPage::Teste4_Click(Platform::Object ^ sender, Windows::UI::Xaml::RoutedEventArgs ^ e)
+{
+	Parametro::AtivationFactory(); //Fábrica de ativação da classe Parametro
+	Parametro::btn_static->Height = 50;
+	Parametro::btn_static->Content = "Botão Estático da Classe Parametro";
+	Area_Teste4->Children->Append(Parametro::btn_static);
+}
+
