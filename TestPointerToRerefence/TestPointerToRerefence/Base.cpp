@@ -5,7 +5,6 @@
 Base::Base()
 {
 	this->_valor = "123";
-	this->agregado = ref new Agregada(this->_valor);
 }
 
 

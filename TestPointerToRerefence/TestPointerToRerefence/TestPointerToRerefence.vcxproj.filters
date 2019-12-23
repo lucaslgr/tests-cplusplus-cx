@@ -18,6 +18,7 @@
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="Agregada.cpp" />
+    <ClCompile Include="Filha.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -25,6 +26,7 @@
     <ClInclude Include="MainPage.xaml.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="Agregada.h" />
+    <ClInclude Include="Filha.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">

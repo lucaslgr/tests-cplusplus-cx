@@ -1,26 +1,41 @@
 #pragma once
 #include "Agregada.h"
 
+using namespace Platform;
+
 ref class Base
 {
 public:
 	virtual ~Base();
-	/*property Platform::String ^str_privada;
-	property Platform::String ^str_public;*/
-	property Agregada^ agregado;
-	property Platform::String^ Valor
+
+	property String^ Valor
 	{
-		Platform::String ^get()
+		String ^get()
 		{
 			return this->_valor;
 		}
-		void set(Platform::String ^new_valor)
+		void set(String ^new_valor)
 		{
 			this->_valor = new_valor;
+		}
+	}
+
+	//Get e Set para pegar o ponteiro que aponta para _valor
+	property String^* p_Valor
+	{
+		String^* get()
+		{
+			return this->_p_valor;
+		}
+		void set(String^* new_p_valor)
+		{
+			this->_p_valor = new_p_valor;
 		}
 	}
 internal:
 	Base();
 private:
-	Platform::String^ _valor = ref new Platform::String();
+	String^ _valor = ref new String();
+	//Ponteiro que aponta para _valor
+	String^* _p_valor = &_valor;
 };
