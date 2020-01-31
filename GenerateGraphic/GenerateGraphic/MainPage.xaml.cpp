@@ -35,26 +35,32 @@ void GenerateGraphic::MainPage::addChart()
 {
 	// Draw sine chart:
 	auto polyline = ref new Windows::UI::Xaml::Shapes::Polyline();
-	polyline->Stroke = ref new Windows::UI::Xaml::Media::SolidColorBrush(Windows::UI::Colors::Black);
+	polyline->Stroke = ref new Windows::UI::Xaml::Media::SolidColorBrush(Windows::UI::Colors::GreenYellow);
 
 	for (int i = 0; i < 70; i++)
 	{
 		double x = i / 5.0;
 		double y = sin(x);
 		polyline->Points->Append( this->CorrespondingPoint(Point(x, y)));
+		//polyline->Points->Append((Point(x, y)));
 		//polyline.Points.Add(CorrespondingPoint(new Point(x, y)));
 	}
+
 	canvas->Children->Append(polyline);
+	//canvas->SetZIndex(polyline, 0);
+	//scroll->Content = polyline;
 
 	// Draw cosine chart:
-	polyline = ref new Windows::UI::Xaml::Shapes::Polyline();
+	/*polyline = ref new Windows::UI::Xaml::Shapes::Polyline();
+	polyline->Stroke = ref new Windows::UI::Xaml::Media::SolidColorBrush(Windows::UI::Colors::Red);
 	for (int i = 0; i < 70; i++)
 	{
 		double x = i / 5.0;
 		double y = cos(x);
 		polyline->Points->Append(Point(x, y));
-	}
-	canvas->Children->Append(polyline);
+	}*/
+	//canvas->Children->Append(polyline);
+	//scroll->Content = polyline;
 
 }
 
