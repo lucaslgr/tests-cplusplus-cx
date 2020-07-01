@@ -26,7 +26,7 @@ Repositório para armazenar pequenos programas e exemplos na linguagem C++/CX pa
   
   ```bash
     # Clone este repositório
-    $ git clone https://github.com/lucaslgr/studying-C-language
+    $ git clone https://github.com/lucaslgr/tests-cplusplus-cx
   ```
 
 - 2º:Abra pasta do projeto desejado pelo Visual Studio Community.
